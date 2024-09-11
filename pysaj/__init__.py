@@ -50,6 +50,9 @@ class Sensors(object):
         self.add(
             (
                 Sensor("p-ac", 11, 23, "", "current_power", "W"),
+                Sensor("pv1-v", 5, 5, "/10", "pv1_voltage", "V"), 
+                Sensor("pv1-c", 6, 6, "/100", "pv1_current", "A"),
+                
                 Sensor("e-today", 3, 3, "/100", "today_yield", "kWh", True),
                 Sensor("e-total", 1, 1, "/100", "total_yield", "kWh", False,
                        True),
